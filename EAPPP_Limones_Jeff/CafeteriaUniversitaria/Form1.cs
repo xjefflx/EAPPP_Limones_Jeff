@@ -1,4 +1,9 @@
-﻿using System;
+// Autor: Jeff Alejandro Limones Chachapoya
+// Materia: Diseño y Programación de Software (ITID 543)
+// Escuela Politécnica Nacional - Examen Práctico 1B
+// Formulario principal: Form1 (frmPedidoCafeteria)
+
+using System;
 using System.Windows.Forms;
 
 namespace CafeteriaUniversitaria
