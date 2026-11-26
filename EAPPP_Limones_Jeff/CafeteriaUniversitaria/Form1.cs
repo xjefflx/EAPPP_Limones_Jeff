@@ -16,7 +16,7 @@ namespace CafeteriaUniversitaria
         {
             InitializeComponent();
         }
-
+//Evento Load
         private void Form1_Load(object sender, EventArgs e)
         {
             lvCatalogo.Columns.Add("Producto", 180);
@@ -45,14 +45,14 @@ namespace CafeteriaUniversitaria
             lblTotal.Text = "Total: $0.00";
             lblEstado.Text = "Estado: Seleccione un producto.";
         }
-
+//Agregar productos al catálogo
         private void AgregarProducto(string nombre, double p)
         {
             ListViewItem item = new ListViewItem(nombre);
             item.SubItems.Add("$" + p.ToString("0.00"));
             lvCatalogo.Items.Add(item);
         }
-
+//Tomar Producto y precio
         private void lvCatalogo_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (lvCatalogo.SelectedItems.Count > 0)
@@ -213,7 +213,7 @@ namespace CafeteriaUniversitaria
                 lblEstado.Text = "Estado: " + prod + " eliminado.";
             }
         }
-
+//Limpia la pantall
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             lvPedido.Items.Clear();
@@ -233,7 +233,7 @@ namespace CafeteriaUniversitaria
             ActualizarTotal();
             lblEstado.Text = "Estado: Pedido reiniciado.";
         }
-
+//Calcula los subtotales y total
         private void ActualizarTotal()
         {
             double total = 0;
